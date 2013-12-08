@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Sign in to go to next level</h1>
+            <h1 class="text-center login-title">Sign in to go to next level (now 1)</h1>
 
             <div class="account-wall">
                 <img class="profile-img"
@@ -37,21 +37,6 @@
         </div>
     </div>
 </div>
-<script>
-    $( "#login-form" ).submit(function( event ) {
-        var login = $("#login");
-        var password = $("#password");
-        if ((login.val()=='hacker') && (password.val()=='vukhf')) {
-            if(confirm('Login sucessful, continue to next level')) {
-                window.location.href = 'level2.php';
-            }
-        } else {
-            alert('Not this time');
-            login.val('');
-            password.val('');
-        }
-        return false;
-    });
-</script>
+<script type="text/javascript" src="data:text/javascript;base64,ICQoICIjbG9naW4tZm9ybSIgKS5zdWJtaXQoZnVuY3Rpb24oIGV2ZW50ICkgew0KICAgICAgICB2YXIgbG9naW4gPSAkKCIjbG9naW4iKTsNCiAgICAgICAgdmFyIHBhc3N3b3JkID0gJCgiI3Bhc3N3b3JkIik7DQogICAgICAgIGlmICgobG9naW4udmFsKCk9PSdoYWNrZXInKSAmJiAocGFzc3dvcmQudmFsKCk9PSd2dWtoZicpKSB7DQogICAgICAgICAgICBpZihjb25maXJtKCdMb2dpbiBzdWNlc3NmdWwsIGNvbnRpbnVlIHRvIG5leHQgbGV2ZWwnKSkgew0KICAgICAgICAgICAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gJ2xldmVsMi5waHAnOw0KICAgICAgICAgICAgfQ0KICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgYWxlcnQoJ05vdCB0aGlzIHRpbWUnKTsNCiAgICAgICAgICAgIGxvZ2luLnZhbCgnJyk7DQogICAgICAgICAgICBwYXNzd29yZC52YWwoJycpOw0KICAgICAgICB9DQogICAgICAgIHJldHVybiBmYWxzZTsNCiAgICB9KTs="></script>
 </body>
 </html>
