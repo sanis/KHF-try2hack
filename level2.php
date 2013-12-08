@@ -37,21 +37,6 @@
         </div>
     </div>
 </div>
-<script>
-    $( "#login-form" ).submit(function( event ) {
-        var login = $("#login");
-        var password = $("#password");
-        if ((login.val()=='one') && (password.val()=='google')) {
-            if(confirm('Login sucessful, continue to next level')) {
-                window.location.href = 'level2.php';
-            }
-        } else {
-            alert('Not this time');
-            login.val('');
-            password.val('');
-        }
-        return false;
-    });
-</script>
+<script type="text/javascript" src="data:text/javascript;base64,ZXZhbChmdW5jdGlvbihwLGEsYyxrLGUsZCl7ZT1mdW5jdGlvbihjKXtyZXR1cm4gYy50b1N0cmluZygzNil9O2lmKCEnJy5yZXBsYWNlKC9eLyxTdHJpbmcpKXt3aGlsZShjLS0pe2RbYy50b1N0cmluZyhhKV09a1tjXXx8Yy50b1N0cmluZyhhKX1rPVtmdW5jdGlvbihlKXtyZXR1cm4gZFtlXX1dO2U9ZnVuY3Rpb24oKXtyZXR1cm4nXFx3Kyd9O2M9MX07d2hpbGUoYy0tKXtpZihrW2NdKXtwPXAucmVwbGFjZShuZXcgUmVnRXhwKCdcXGInK2UoYykrJ1xcYicsJ2cnKSxrW2NdKX19cmV0dXJuIHB9KCckKCIjMC1iIikuYyhkKGEpezMgMD0kKCIjMCIpOzMgMj0kKCIjMiIpOzQoKDAuMSgpPT1cJ2ZcJykmJigyLjEoKT09XCc3XCcpKXs0KDUoXCc5IDYsIDggZSB0IHBcJykpe2cucS5yPVwncy5uXCd9fW17aShcJ2ggaiBrXCcpOzAuMShcJ1wnKTsyLjEoXCdcJyl9bCBvfSk7JywzMCwzMCwnbG9naW58dmFsfHBhc3N3b3JkfHZhcnxpZnxjb25maXJtfHN1Y2Vzc2Z1bHxnb29nbGV8Y29udGludWV8TG9naW58ZXZlbnR8Zm9ybXxzdWJtaXR8ZnVuY3Rpb258dG98b25lfHdpbmRvd3xOb3R8YWxlcnR8dGhpc3x0aW1lfHJldHVybnxlbHNlfHBocHxmYWxzZXxsZXZlbHxsb2NhdGlvbnxocmVmfGxldmVsM3xuZXh0Jy5zcGxpdCgnfCcpLDAse30pKQ0K"></script>
 </body>
 </html>
