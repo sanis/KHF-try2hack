@@ -1,19 +1,3 @@
-<?php
-if (isset($_GET['f'])) {
-    $details = file_get_contents('level6/'.$_GET['f'].'.txt');
-    $details = explode('|',$details);
-}
-
-if (isset($_POST['login'])) {
-    if ($_POST['password']==$details[1] && $_POST['login']==$details[0]) {
-        header('location: level7.php');
-    } else {
-        header('location: level6.php?success=0');
-    }
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,14 +18,14 @@ if (isset($_POST['login'])) {
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Sign in to go to next level (now 6)</h1>
+            <h1 class="text-center login-title">Sign in to go to next level (now 7)</h1>
 
             <div class="account-wall">
                 <img class="profile-img"
                      src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                      alt="">
 
-                <form class="form-signin" id="login-form" method="post" action="level6.php?f=users">
+                <form class="form-signin" id="login-form">
                     <input type="text" class="form-control" placeholder="Login" id="login" name="login" required autofocus>
                     <input type="password" class="form-control" placeholder="Password" id="password" name="password" required autofocus
                            style="margin-top: 10px">
@@ -53,12 +37,13 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 </div>
-<?php if (isset($_GET['success']) && $_GET['success']=='0') { ?>
     <script>
-        alert('not this time');
-        $("#login").val('');
-        $("#password").val('');
+        $('#login-form').submit(function (e) {
+            alert('not this time');
+            $("#login").val('');
+            $("#password").val('');
+            return false;
+        });
     </script>
-<?php } ?>
 </body>
 </html>
